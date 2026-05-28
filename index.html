@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Users — NTT DATA Challenge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <button id="themeToggleBtn" class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">
+      ☀️
+    </button>
+
+    <div class="badge">Nuevo Reto Bootcamp 2</div>
+    <h1>Random User<br/>Explorer</h1>
+    <p>Consumiendo la API de <strong>randomuser.me</strong> en tiempo real</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn-primary" id="loadBtn" onclick="loadUsers()">
+      ⟳ Cargar 10 usuarios
+    </button>
+    <button class="btn-secondary" onclick="clearUsers()">
+      Limpiar
+    </button>
+  </div>
+
+  <div id="status"></div>
+  <div class="results-count" id="resultsCount"></div>
+  <div id="users-grid"></div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
